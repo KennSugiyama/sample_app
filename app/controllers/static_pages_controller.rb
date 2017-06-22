@@ -7,4 +7,8 @@ class StaticPagesController < ApplicationController
 
   def about
   end
+
+  def contact
+    @email_address = ENV['SECRET_EMAIL_ADDRESS']
+  end
 end
